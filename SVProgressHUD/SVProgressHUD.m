@@ -858,7 +858,8 @@ static const CGFloat SVProgressHUDParallaxDepthPoints = 10;
     
     for (__strong UIView *possibleKeyboard in [keyboardWindow subviews]) {
         if([possibleKeyboard isKindOfClass:NSClassFromString(@"UIPeripheralHostView")] || [possibleKeyboard isKindOfClass:NSClassFromString(@"UIKeyboard")])
-            return possibleKeyboard.bounds.size.height;
+            //return possibleKeyboard.bounds.size.height;
+            return 0;
     }
     
     return 0;
